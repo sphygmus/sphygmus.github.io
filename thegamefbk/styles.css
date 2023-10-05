@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@font-face {
+	font-family: "Mazzard H";
+	src: url("./fonts/MazzardH-Regular");
+}
+
+body {
+	padding: 0 20%;
+	margin: 0;
+	background: url("./assets/pattern.png") repeat-x, #1e1e1e;
+	background-size: 25%;
+	font-family: "Roboto";
+	color: #ddd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Mazzard H";
+	margin: 0;
+}
+
+h1, h2 { margin-bottom: 0.7em }
+h3, h4 { margin-bottom: 0.6em }
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	padding: 2em;
+	position: relative;
+}
+
+.game-logo {
+	height: 64px;
+	user-select: none;
+	pointer-events: none;
+}
+
+#navigation {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+
+#navigation a {
+	color: #ddd;
+	text-decoration: none;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.25s ease;
+	box-sizing: border-box;
+}
+
+#navigation a:hover {
+	background-color: #333;
+	width: 48px;
+	height: 48px;
+	border: 1px solid #e5007e;
+}
+
+#navigation a:hover > img {
+	filter: invert(100%);
+}
+
+#navigation a img {
+	filter: invert(90%);
+}
+
+#navigation .big {
+	background-color: #333;
+}
+
+#allergen-informations {
+	position: fixed;
+	left: calc(20% - 10% - 1.5em);
+	width: 10%;
+	padding: 0.5em;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+	grid-template-columns: 1fr 1fr;
+}
+
+.allergen-item {
+	display: flex;
+	flex-direction: row;
+	padding: 0.5em;
+	gap: 0.5em;
+	text-transform: uppercase;
+	align-items: center;
+	background-color: #1e1e1e;
+	border: 1px solid #333;
+	border-radius: 0.5em;
+	transition: 0.25s ease;
+	user-select: none;
+}
+
+.allergen-item.selected {
+	background-color: #611F10;
+	border-color: #861F10;
+}
+
+.allergen-item:hover {
+	border-color: #e5007e;
+}
+
+.allergen-item img {
+	width: 24px;
+	height: 24px;
+}
+
+.allergen-item h5 {
+	width: 100%;
+	text-align: center;
+}
+
+#content {
+	position: relative;
+}
+
+.menu-items {
+	display: grid;
+	gap: 1em;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-bottom: 2em;
+	align-items: flex-end;
+}
+
+h2 {
+	padding-left: 1em;
+}
+
+.menu-single {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border: 1px solid #333;
+	border-radius: 0.5em;
+	height: fit-content;
+	transition: 0.25s ease;
+	position: relative;
+	background-color: #1e1e1e;
+}
+
+.menu-single:hover {
+	border-color: #e5007e;
+	filter: drop-shadow(0 0 0.5em #e5007e);
+}
+
+.menu-single:hover > .item-info span {
+	border-bottom: 1px solid #e5007e;
+	margin-bottom: 0.5em;
+}
+
+.menu-single > img {
+	margin-top: 1em;
+}
+
+
+.item-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-inline: 1em;
+	margin-top: 1em;
+}
+
+.item-info h4 {
+	margin: 0;
+}
+
+.item-info span {
+	font-size: 15px;
+	box-sizing: border-box;
+	transition: 0.25s ease;
+	padding: 3px 6px;
+	margin-left: 1em;
+}
+
+.item-description {
+	font-size: 12px;
+	padding-inline: 1em;
+	margin-top: 0.25em;
+	color: #999;
+}
+
+.menu-item-allergen {
+	position: absolute;
+	right: 8px;
+	bottom: 4px;
+	filter: drop-shadow(0 0 0.1em black);
+}
+
+.menu-item-allergen img {
+	width: 16px;
+	height: 16px;
+	user-select: none;
+	pointer-events: none;
+	
+}
+
+@media only screen and (max-width: 1200px) {
+	.menu-items {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media only screen and (max-width: 920px) {
+	body {
+		padding: 0 10%;
+	}
+
+	#navigation {
+		display: none;
+	}
+
+	#allergen-informations {
+		position: relative;
+		left: auto;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		width: auto;
+		margin-bottom: 20px;
+	}
+
+	.allergen-item {
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#header {
+		justify-content: center;
+	}
+	.menu-items {
+		grid-template-columns: 1fr;
+	}
+}
