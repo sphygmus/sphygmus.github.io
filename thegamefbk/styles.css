@@ -220,9 +220,10 @@ h2 {
 		position: relative;
 		left: auto;
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		width: auto;
 		margin-bottom: 20px;
+		padding: 0;
 	}
 
 	.allergen-item {
