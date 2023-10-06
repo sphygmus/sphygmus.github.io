@@ -216,12 +216,20 @@ h2 {
 
 	.menu-single > img {
 		position: absolute;
-		margin-top: 0;
 		filter: brightness(0.33);
 		width: 100%;
-		align-self: center;
+  		margin: 0;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
 		aspect-ratio: 16 / 9;
 		z-index: -1;
+		user-select: none;
+		pointer-events: none;
 	}
 
 	.menu-item-allergen {
