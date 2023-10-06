@@ -27,6 +27,7 @@ h1, h2 {
 	font-family: "Mazzard H Bold";
 }
 h3, h4 { margin-bottom: 0.6em }
+h5, h6 { margin-bottom: -0.15em}
 
 #header {
 	display: flex;
@@ -102,6 +103,7 @@ h3, h4 { margin-bottom: 0.6em }
 	border-radius: 0.5em;
 	transition: 0.25s ease;
 	user-select: none;
+	overflow: hidden;
 }
 
 .allergen-item.selected {
@@ -235,6 +237,7 @@ h2 {
 	}
 
 	.allergen-item {
+		display: none;
 		justify-content: center;
 	}
 }
