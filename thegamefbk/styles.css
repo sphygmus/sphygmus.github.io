@@ -82,47 +82,24 @@ h5, h6 { margin-bottom: -0.15em}
 
 #allergen-informations {
 	position: fixed;
-	left: calc(20% - 10% - 1.5em);
-	width: 10%;
+	left: 1em;
+	bottom: 1em;
 	padding: 0.5em;
-	display: flex;
-	flex-direction: column;
+	display: grid;
 	gap: 0.5em;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 }
 
 .allergen-item {
 	display: flex;
-	flex-direction: row;
-	padding: 0.5em;
-	gap: 0.5em;
-	text-transform: uppercase;
 	align-items: center;
-	background-color: #1e1e1e;
-	border: 1px solid #333;
-	border-radius: 0.5em;
-	transition: 0.25s ease;
+	gap: 0.5em;
 	user-select: none;
-	overflow: hidden;
-}
-
-.allergen-item.selected {
-	background-color: #611F10;
-	border-color: #861F10;
-}
-
-.allergen-item:hover {
-	border-color: #e5007e;
 }
 
 .allergen-item img {
-	width: 24px;
-	height: 24px;
-}
-
-.allergen-item h5 {
-	width: 100%;
-	text-align: center;
+	width: 16px;
+	height: 16px;
 }
 
 #content {
@@ -167,7 +144,6 @@ h2 {
 	margin-top: 1em;
 	aspect-ratio: 16 / 9;
 }
-
 
 .item-info {
 	display: flex;
@@ -231,6 +207,33 @@ h2 {
 
 	.menu-items {
 		grid-template-columns: 1fr 1fr;
+	}
+
+	.menu-single {
+		padding-bottom: 1em;
+		background-color: transparent;
+	}
+
+	.menu-single > img {
+		position: absolute;
+		margin-top: 0;
+		filter: brightness(0.33);
+		width: 100%;
+		align-self: center;
+		aspect-ratio: 16 / 9;
+		z-index: -1;
+	}
+
+	.menu-item-allergen {
+		position: relative;
+		margin: 1em 0 0 1em;
+		bottom: 0;
+		right: 0;
+		filter: drop-shadow(0 0 0.1em black);
+	}
+
+	.item-info {
+		margin-top: 0;
 	}
 }
 
