@@ -234,6 +234,11 @@ h2 {
 
 	.item-info {
 		margin-top: 0;
+		drop-shadow(0 0 0.1em black);
+	}
+
+	.item-description {
+		filter: drop-shadow(0 0 0.1em black);
 	}
 }
 
