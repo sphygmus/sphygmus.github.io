@@ -165,6 +165,7 @@ h2 {
 
 .menu-single > img {
 	margin-top: 1em;
+	aspect-ratio: 16 / 9;
 }
 
 
@@ -173,6 +174,7 @@ h2 {
 	align-items: center;
 	justify-content: space-between;
 	padding-inline: 1em;
+	gap: 1em;
 	margin-top: 1em;
 }
 
@@ -185,12 +187,12 @@ h2 {
 	box-sizing: border-box;
 	transition: 0.25s ease;
 	padding: 3px 6px;
-	margin-left: 1em;
+	text-align: right;
 }
 
 .item-description {
 	font-size: 12px;
-	padding-inline: 1em;
+	margin-inline: 1.25em;
 	margin-top: 0.25em;
 	color: #999;
 }
@@ -211,19 +213,6 @@ h2 {
 }
 
 @media only screen and (max-width: 1200px) {
-	.menu-items {
-		grid-template-columns: 1fr 1fr;
-	}
-}
-
-@media only screen and (max-width: 920px) {
-	body {
-		padding: 0 10%;
-		background-size: 100%;
-	}
-
-
-
 	#allergen-informations {
 		display: none;
 		position: absolute;
@@ -238,6 +227,17 @@ h2 {
 	.allergen-item {
 		display: none;
 		justify-content: center;
+	}
+
+	.menu-items {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	body {
+		padding: 0 10%;
+		background-size: 100%;
 	}
 }
 
