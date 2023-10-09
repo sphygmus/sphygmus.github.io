@@ -257,10 +257,11 @@ h2 {
 	}
 
 	.menu-single.new-item::before {
-		top: 0.5em;
-		right: 0.5em;
+		top: 1em;
+		right: 1em;
 		bottom: auto;
 		left: auto;
+		vertical-align: middle;
 	}
 
 	.menu-item-allergen {
