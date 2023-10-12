@@ -23,11 +23,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2 {
-	margin-bottom: 0.7em;
 	font-family: "Mazzard H Bold";
 }
+
+h1 {
+	text-align: center;
+	margin-bottom: 0.2em;
+}
+
+h2 {
+	padding-left: 1em;
+	margin-bottom: 0.7em;
+}
+
 h3, h4 { margin-bottom: 0.6em }
-h5, h6 { margin-bottom: -0.15em}
+h5, h6 { margin-bottom: -0.15em }
 
 #header {
 	display: flex;
@@ -114,10 +124,6 @@ h5, h6 { margin-bottom: -0.15em}
 	align-items: flex-end;
 }
 
-h2 {
-	padding-left: 1em;
-}
-
 .menu-single {
 	display: flex;
 	flex-direction: column;
@@ -132,7 +138,10 @@ h2 {
 
 .menu-single:hover {
 	border-color: #e5007e !important;
-	filter: drop-shadow(0 0 0.5em #e5007e);
+	animation-name: glow;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
 }
 
 .menu-single:hover > .item-info span {
@@ -140,21 +149,35 @@ h2 {
 	margin-bottom: 0.5em;
 }
 
-.menu-single > img {
-	margin-top: 1em;
-	object-fit: cover;
+.image-container {
+	border: 1px solid #333;
+	border-radius: 0.5em;
+	margin: 0.5em;
 	aspect-ratio: 16 / 9;
+	overflow: hidden;
+}
+
+.image-container img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	transition: 0.25s ease;
+}
+
+.menu-single:hover > .image-container img {
+	width: 110%;
+	margin-left: -5%;
 }
 
 .menu-single.new-item {
-	border-color: turquoise;
+	border-color: rgba(64, 224, 208, 0.5);
 }
 
 .menu-single.new-item::before {
 	content: "YENİ";
 	position: absolute;
-	bottom: 0.5em;
-	left: 0.5em;
+	bottom: 1.5em;
+	left: 1.5em;
 	padding: 0.2em 0.5em;
 	color: #1e1e1e;
 	font-size: 0.75em;
@@ -182,6 +205,11 @@ h2 {
 	margin: 0;
 }
 
+.item-info h6 {
+	margin: 0;
+	padding: 0;
+}
+
 .item-info span {
 	font-size: 15px;
 	box-sizing: border-box;
@@ -199,8 +227,8 @@ h2 {
 
 .menu-item-allergen {
 	position: absolute;
-	right: 8px;
-	bottom: 4px;
+	right: 1em;
+	bottom: 0.75em;
 	filter: drop-shadow(0 0 0.1em black);
 }
 
@@ -213,6 +241,11 @@ h2 {
 }
 
 @media only screen and (max-width: 1200px) {
+	h2 {
+		padding-left: 0;
+		text-align: center;
+	}
+
 	#allergen-informations {
 		display: none;
 		position: absolute;
@@ -238,11 +271,12 @@ h2 {
 		background-color: transparent;
 	}
 
-	.menu-single > img {
+	.image-container {
 		position: absolute;
+		margin: 0;
+		border: none;
+		border-radius: 0;
 		filter: brightness(0.33);
-		width: 100%;
-  		margin: 0;
 		top: 50%;
 		left: 50%;
 		-webkit-transform: translate(-50%, -50%);
@@ -250,10 +284,9 @@ h2 {
 		-ms-transform: translate(-50%, -50%);
 		-o-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
-		aspect-ratio: 16 / 9;
+		width: 100%;
 		z-index: -1;
 		user-select: none;
-		pointer-events: none;
 	}
 
 	.menu-single.new-item::before {
@@ -312,5 +345,25 @@ h2 {
 
 	.menu-items {
 		grid-template-columns: 1fr;
+	}
+
+	.menu-items:not(:last-child)::after {
+		content: "";
+		width: 100%;
+		border-bottom: 1px solid #333;
+	}
+}
+
+@keyframes glow {
+	0% {
+		filter: drop-shadow(0 0 0.25em #e5007e);
+	}
+
+	50% {
+		filter: drop-shadow(0 0 1em #e5007e);
+	}
+
+	100% {
+		filter: drop-shadow(0 0 0.25em #e5007e);
 	}
 }
