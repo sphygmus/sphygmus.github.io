@@ -52,6 +52,14 @@ h5, h6 { margin-bottom: -0.15em }
 	pointer-events: none;
 }
 
+#logo-container {
+	transition: ease 0.25s;
+}
+
+#logo-container:hover {
+	margin-left: 1em;
+}
+
 #navigation {
 	display: flex;
 	align-items: center;
@@ -91,20 +99,62 @@ h5, h6 { margin-bottom: -0.15em }
 }
 
 #allergen-informations {
+	display: flex;
 	position: fixed;
 	left: 1em;
 	bottom: 1em;
 	padding: 0.5em;
-	display: grid;
 	gap: 0.5em;
-	grid-template-columns: 1fr;
+	flex-direction: column-reverse;
+}
+
+.open-menu-button {
+	border-radius: 50%;
+	width: 2.5em;
+	height: 2.5em;
+	background: linear-gradient(135deg, rgba(255,124,0,1) 0%, rgba(229,0,126,1) 100%);
+	margin-top: 0.5em;
+	transition: 0.25s ease;
+	cursor: pointer;
+	user-select: none;
+}
+
+.open-menu-button:hover {
+	animation: rotate 1s linear infinite;
+	filter: drop-shadow(0 0 0.5em #e5007e);
+}
+
+.open-menu-button:hover ~ .allergen-item {
+	display: flex;
+}
+
+.open-menu-button img {
+	width: 1.5em;
+	height: 1.5em;
+	padding: 0.5em;
+	transition: 0.25s ease;
+	pointer-events: none;
+}
+
+.open-menu-button:hover > img {
+	animation-name: rotate;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-direction: reverse;
+	animation-iteration-count: infinite;
+	filter: invert();
 }
 
 .allergen-item {
-	display: flex;
+	display: none;
 	align-items: center;
 	gap: 0.5em;
 	user-select: none;
+}
+
+.allergen-item.selected {
+	color: #e5007e;
+	filter: drop-shadow(0 0 0.25em #e5007e);
 }
 
 .allergen-item img {
@@ -127,17 +177,30 @@ h5, h6 { margin-bottom: -0.15em }
 .menu-single {
 	display: flex;
 	flex-direction: column;
-	overflow: hidden;
 	border: 1px solid #333;
 	border-radius: 0.5em;
 	height: fit-content;
 	transition: 0.25s ease;
 	position: relative;
-	background-color: #1e1e1e;
+	background: #1e1e1e;
+	overflow: hidden;
 }
+
+/* .menu-single:hover:before {
+	content: "";
+	background: linear-gradient(135deg, rgba(255,124,0,1) 0%, rgba(229,0,126,1) 100%);
+	position: absolute;
+	left: -2px;
+	right: -2px;
+	top: -2px;
+	bottom: -2px;
+	z-index: -2;
+	border-radius: 0.5em;
+} */
 
 .menu-single:hover {
 	border-color: #e5007e !important;
+	border-width: 2px;
 	animation-name: glow;
 	animation-duration: 2.5s;
 	animation-iteration-count: infinite;
@@ -153,7 +216,7 @@ h5, h6 { margin-bottom: -0.15em }
 	border: 1px solid #333;
 	border-radius: 0.5em;
 	margin: 0.5em;
-	aspect-ratio: 16 / 9;
+	aspect-ratio: 20 / 9;
 	overflow: hidden;
 }
 
@@ -262,6 +325,10 @@ h5, h6 { margin-bottom: -0.15em }
 		justify-content: center;
 	}
 
+	.open-menu-button {
+		display: none;
+	}
+
 	.menu-items {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -365,5 +432,15 @@ h5, h6 { margin-bottom: -0.15em }
 
 	100% {
 		filter: drop-shadow(0 0 0.25em #e5007e);
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
 	}
 }

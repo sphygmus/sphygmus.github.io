@@ -10,7 +10,9 @@
 	</head>
 	<body>
 		<div id="header">
-			<img class="game-logo" src="./assets/logo.svg" alt="The Game Logo" />
+			<a href="javascript:void(0)" id="logo-container">
+				<img class="game-logo" src="./assets/logo.svg" alt="The Game Logo" />
+			</a>
 			<div id="navigation">
 				<a href="javascript:void(0)"><img src="./assets/nav/food.svg" fill="#fff" alt="Food" /></a>
 				<a href="javascript:void(0)"><img src="./assets/nav/coffee.svg" fill="#fff" alt="Coffee" /></a>
@@ -19,41 +21,44 @@
 			</div>
 		</div>
 		<div id="allergen-informations">
-			<div class="allergen-item selected">
-				<img src="./assets/allergen/egg.svg" alt="Allergen Item" />
-				<h6>YUMURTA</h6>
+			<div class="open-menu-button">
+				<img src="./assets/allergen/info.svg" alt="Allergen Item" />
 			</div>
 			<div class="allergen-item">
-				<img src="./assets/allergen/gluten.svg" alt="Allergen Item" />
-				<h6>GLUTEN</h6>
-			</div>
-			<div class="allergen-item">
-				<img src="./assets/allergen/fish.svg" alt="Allergen Item" />
-				<h6>BALIK</h6>
-			</div>
-			<div class="allergen-item">
-				<img src="./assets/allergen/milk.svg" alt="Allergen Item" />
-				<h6>SÜT</h6>
-			</div>
-			<div class="allergen-item">
-				<img src="./assets/allergen/mustard.svg" alt="Allergen Item" />
-				<h6>HARDAL</h6>
-			</div>
-			<div class="allergen-item">
-				<img src="./assets/allergen/peanuts.svg" alt="Allergen Item" />
-				<h6>YER FISTIĞI</h6>
-			</div>
-			<div class="allergen-item">
-				<img src="./assets/allergen/nuts.svg" alt="Allergen Item" />
-				<h6>SERT KABUKLU MEYVELER</h6>
+				<img src="./assets/allergen/sesame.svg" alt="Allergen Item" />
+				<h6>SUSAM TOHUMU</h6>
 			</div>
 			<div class="allergen-item">
 				<img src="./assets/allergen/celery.svg" alt="Allergen Item" />
 				<h6>KEREVİZ</h6>
 			</div>
 			<div class="allergen-item">
-				<img src="./assets/allergen/sesame.svg" alt="Allergen Item" />
-				<h6>SUSAM TOHUMU</h6>
+				<img src="./assets/allergen/nuts.svg" alt="Allergen Item" />
+				<h6>SERT KABUKLU MEYVELER</h6>
+			</div>
+			<div class="allergen-item">
+				<img src="./assets/allergen/peanuts.svg" alt="Allergen Item" />
+				<h6>YER FISTIĞI</h6>
+			</div>
+			<div class="allergen-item">
+				<img src="./assets/allergen/mustard.svg" alt="Allergen Item" />
+				<h6>HARDAL</h6>
+			</div>
+			<div class="allergen-item">
+				<img src="./assets/allergen/milk.svg" alt="Allergen Item" />
+				<h6>SÜT</h6>
+			</div>
+			<div class="allergen-item">
+				<img src="./assets/allergen/fish.svg" alt="Allergen Item" />
+				<h6>BALIK</h6>
+			</div>
+			<div class="allergen-item">
+				<img src="./assets/allergen/gluten.svg" alt="Allergen Item" />
+				<h6>GLUTEN</h6>
+			</div>
+			<div class="allergen-item">
+				<img src="./assets/allergen/egg.svg" alt="Allergen Item" />
+				<h6>YUMURTA</h6>
 			</div>
 		</div>
 		<div id="content">
@@ -72,7 +77,7 @@
 					</div>
 					<span class="item-description">Dana sosis, samosa börek, patates kroket, soğan halkası, patates kızartması, pane edilmiş ricotta peynirli meksika biberi</span>
 					<div class="image-container">
-						<img src="./assets/menu-images/combo.jpg" alt="Menu image" />
+						<img src="./assets/menu-images/the-game-combo.jpg" alt="Menu image" />
 					</div>
 				</div>
 				<div class="menu-single">
@@ -102,7 +107,7 @@
 					</div>
 					<span class="item-description">Kaşarlı / Sucuklu / Karışık</span>
 					<div class="image-container">
-						<img src="./assets/menu-images/tost.jpg" alt="Menu image" />
+						<img src="./assets/menu-images/toast.jpg" alt="Menu image" />
 					</div>
 				</div>
 				<div class="menu-single">
@@ -115,7 +120,7 @@
 					</div>
 					<span class="item-description">Kajun baharatı ile</span>
 					<div class="image-container">
-						<img src="./assets/menu-images/french-fries.jpg" alt="Menu image" />
+						<img src="./assets/menu-images/fries.jpg" alt="Menu image" />
 					</div>
 				</div>
 				<div class="menu-single">
@@ -129,7 +134,7 @@
 					</div>
 					<span class="item-description">Peynir çeşitleri</span>
 					<div class="image-container">
-						<img src="./assets/menu-images/cheese.jpg" alt="Menu image" />
+						<img src="./assets/menu-images/cubes-of-cheese.jpg" alt="Menu image" />
 					</div>
 				</div>
 			</div>
@@ -146,7 +151,7 @@
 					</div>
 					<span class="item-description">Kruton ekmek ve limon ile</span>
 					<div class="image-container">
-						<img src="./assets/menu-images/mercimek-corbasi.jpg" alt="Menu image" />
+						<img src="./assets/menu-images/lentil-soup.jpg" alt="Menu image" />
 					</div>
 				</div>
 				<div class="menu-single">
@@ -161,7 +166,7 @@
 					</div>
 					<span class="item-description">Hardal sos ile</span>
 					<div class="image-container">
-						<img src="./assets/menu-images/domates-corbasi.jpg" alt="Menu image" />
+						<img src="./assets/menu-images/tomato-soup.jpg" alt="Menu image" />
 					</div>
 				</div>
 			</div>
@@ -178,7 +183,7 @@
 					</div>
 					<span class="item-description">Akdeniz yeşillikleri, çeri domates, beyaz peynir</span>
 					<div class="image-container">
-						<img src="./assets/placeholder.png" alt="Menu image" />
+						<img src="./assets/menu-images/mediterranean-salad.jpg" alt="Menu image" />
 					</div>
 				</div>
 				<div class="menu-single">
@@ -194,7 +199,7 @@
 					</div>
 					<span class="item-description">Izgara tavuk göğsü, marul, siyah zeytin, parmesan peyniri, kruton ekmek, safranlı sezar sos</span>
 					<div class="image-container">
-						<img src="./assets/placeholder.png" alt="Menu image" />
+						<img src="./assets/menu-images/caesar-salad.jpg" alt="Menu image" />
 					</div>
 				</div>
 				<div class="menu-single">
@@ -209,7 +214,7 @@
 					</div>
 					<span class="item-description">Akdeniz yeşillikleri, roka, marul ve meksika fasulyesi</span>
 					<div class="image-container">
-						<img src="./assets/placeholder.png" alt="Menu image" />
+						<img src="./assets/menu-images/steak-salad.jpg" alt="Menu image" />
 					</div>
 				</div>
 			</div>
@@ -228,7 +233,7 @@
 					</div>
 					<span class="item-description">160 gr. hamburger eti, karışık turşu ve patates kızartması</span>
 					<div class="image-container">
-						<img src="./assets/placeholder.png" alt="Menu image" />
+						<img src="./assets/menu-images/hamburger.jpeg" alt="Menu image" />
 					</div>
 				</div>
 				<div class="menu-single">
@@ -244,7 +249,7 @@
 					</div>
 					<span class="item-description">Eritilmiş cheddar peynirli, 160. gr hamburger eti, karışık turşu ve patates kızartması</span>
 					<div class="image-container">
-						<img src="./assets/placeholder.png" alt="Menu image" />
+						<img src="./assets/menu-images/cheeseburger.jpeg" alt="Menu image" />
 					</div>
 				</div>
 				<div class="menu-single">
@@ -258,7 +263,7 @@
 					</div>
 					<span class="item-description">Patates tava ve pilav ile</span>
 					<div class="image-container">
-						<img src="./assets/placeholder.png" alt="Menu image" />
+						<img src="./assets/menu-images/meatballs.jpg" alt="Menu image" />
 					</div>
 				</div>
 				<div class="menu-single">
