@@ -232,12 +232,10 @@ h5, h6 { margin-bottom: -0.15em }
 	margin-left: -5%;
 }
 
-.new-item {
-	border-color: rgba(64, 224, 208, 0.5);
-}
-
-.new-item::before {
-	content: "YENİ";
+.new-item::before,
+.discounted-item::before,
+.popular-item::before {
+	content: "";
 	position: absolute;
 	bottom: 1.5em;
 	left: 1.5em;
@@ -246,14 +244,35 @@ h5, h6 { margin-bottom: -0.15em }
 	font-size: 0.75em;
 	font-family: "Mazzard H";
 	border-radius: 0.25em;
-	background-color: turquoise;
+	filter: drop-shadow(0 0 0.2em rgba(0, 0, 0, 0.5));
 	transition: 0.25s ease;
 }
 
-.new-item:hover::before {
+.new-item:hover::before,
+.discounted-item:hover::before,
+.popular-item:hover::before {
 	background-color: #e5007e;
 	color: #ddd;
 }
+
+.new-item { border-color: rgba(64, 224, 208, 0.705) }
+.new-item::before {
+	content: "YENİ";
+	background-color: turquoise;
+}
+
+.discounted-item { border-color: rgba(221, 224, 64, 0.733) }
+.discounted-item::before {
+	content: "İNDİRİM";
+	background-color: yellow;
+}
+
+.popular-item { border-color: rgba(0, 195, 255, 0.733) }
+.popular-item::before {
+	content: "POPÜLER";
+	background-color: skyblue;
+}
+
 
 .item-info {
 	display: flex;
@@ -356,7 +375,9 @@ h5, h6 { margin-bottom: -0.15em }
 		user-select: none;
 	}
 
-	.menu-single.new-item::before {
+	.new-item::before,
+	.discounted-item::before,
+	.popular-item::before {
 		top: 1em;
 		right: 1em;
 		bottom: auto;
