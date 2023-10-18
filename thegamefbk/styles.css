@@ -232,11 +232,11 @@ h5, h6 { margin-bottom: -0.15em }
 	margin-left: -5%;
 }
 
-.menu-single.new-item {
+.new-item {
 	border-color: rgba(64, 224, 208, 0.5);
 }
 
-.menu-single.new-item::before {
+.new-item::before {
 	content: "YENİ";
 	position: absolute;
 	bottom: 1.5em;
@@ -250,7 +250,7 @@ h5, h6 { margin-bottom: -0.15em }
 	transition: 0.25s ease;
 }
 
-.menu-single.new-item:hover::before {
+.new-item:hover::before {
 	background-color: #e5007e;
 	color: #ddd;
 }
