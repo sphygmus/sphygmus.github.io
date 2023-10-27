@@ -1,30 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.e006b460.css",
-    "main.js": "./static/js/main.a66b25b8.js",
-    "static/media/caesar-salad.jpg": "./static/media/caesar-salad.9b93b63b4d3526afe089.jpg",
-    "static/media/mediterranean-salad.jpg": "./static/media/mediterranean-salad.041256c7f5b5303ee12a.jpg",
-    "static/media/spaghetti.jpg": "./static/media/spaghetti.2bac4dc4c4568e471b5c.jpg",
-    "static/media/steak-salad.jpg": "./static/media/steak-salad.ce034dd67b5a1aa7f3f4.jpg",
-    "static/media/grilled-chicken-bbq.jpg": "./static/media/grilled-chicken-bbq.deeea86367c7ce0d1375.jpg",
-    "static/media/salmon-fillet.jpg": "./static/media/salmon-fillet.1063dff9ef9b193d3de5.jpg",
-    "static/media/chicken-noodle.jpg": "./static/media/chicken-noodle.35055d71217575f9f529.jpg",
-    "static/media/toast.jpg": "./static/media/toast.5b5316e90941fff420ac.jpg",
-    "static/media/chicken-wrap.jpg": "./static/media/chicken-wrap.5766fa33b6d698c36a80.jpg",
-    "static/media/steak-wrap.jpg": "./static/media/steak-wrap.00afcd6d1d1ebc17e86d.jpg",
-    "static/media/penne.jpg": "./static/media/penne.07d860a9b9f89e0d9874.jpg",
-    "static/media/vegetable-wrap.jpg": "./static/media/vegetable-wrap.a215a0292fc4c9c5e802.jpg",
-    "static/media/the-game-combo.jpg": "./static/media/the-game-combo.eb8e30874cbd7783add2.jpg",
-    "static/media/tortellini.jpg": "./static/media/tortellini.643519cccb782e4ffea9.jpg",
-    "static/media/club-sandwich.jpg": "./static/media/club-sandwich.b1cde8184b9d89ea1e17.jpg",
-    "static/media/grilled-tenderloin.jpg": "./static/media/grilled-tenderloin.62811409b75159ebd3b0.jpg",
-    "static/media/cubes-of-cheese.jpg": "./static/media/cubes-of-cheese.b5c6dc4a6dd03b1b03e6.jpg",
-    "static/media/lentil-soup.jpg": "./static/media/lentil-soup.67f155b14cbc05919ad8.jpg",
-    "static/media/tomato-soup.jpg": "./static/media/tomato-soup.47d9be0d43c933c905d0.jpg",
-    "static/media/fries.jpg": "./static/media/fries.6e85731b69b95a8c25bf.jpg",
-    "static/media/meatballs.jpg": "./static/media/meatballs.677f0d54728c065dad0a.jpg",
-    "static/media/hamburger.jpg": "./static/media/hamburger.9a09f3b6027e67ac48bc.jpg",
-    "static/media/cheeseburger.jpg": "./static/media/cheeseburger.fdd5d2ed9d2cc3a8305c.jpg",
+    "main.css": "./static/css/main.5ee7d09e.css",
+    "main.js": "./static/js/main.bac7a87e.js",
     "static/media/MazzardH-Medium.ttf": "./static/media/MazzardH-Medium.cab623b76800c1573b43.ttf",
     "static/media/MazzardH-Bold.ttf": "./static/media/MazzardH-Bold.8f1b5e323e1a8e9389bd.ttf",
     "static/media/MazzardH-SemiBold.ttf": "./static/media/MazzardH-SemiBold.ae8bcb425c90829d8925.ttf",
@@ -50,11 +27,11 @@
     "static/media/search.svg": "./static/media/search.82d3481840537f55a197ec3b7d2e44f5.svg",
     "static/media/home.svg": "./static/media/home.dcebe669ba2f9865fb452e6cfc30b80f.svg",
     "static/media/goup.svg": "./static/media/goup.db993b821b0aa4bca99715960538f054.svg",
-    "main.e006b460.css.map": "./static/css/main.e006b460.css.map",
-    "main.a66b25b8.js.map": "./static/js/main.a66b25b8.js.map"
+    "main.5ee7d09e.css.map": "./static/css/main.5ee7d09e.css.map",
+    "main.bac7a87e.js.map": "./static/js/main.bac7a87e.js.map"
   },
   "entrypoints": [
-    "static/css/main.e006b460.css",
-    "static/js/main.a66b25b8.js"
+    "static/css/main.5ee7d09e.css",
+    "static/js/main.bac7a87e.js"
   ]
 }
