@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.6096502b.css",
-    "main.js": "./static/js/main.19470943.js",
+    "main.css": "./static/css/main.16927eee.css",
+    "main.js": "./static/js/main.313632d0.js",
     "static/media/MazzardH-Medium.ttf": "./static/media/MazzardH-Medium.cab623b76800c1573b43.ttf",
     "static/media/MazzardH-Bold.ttf": "./static/media/MazzardH-Bold.8f1b5e323e1a8e9389bd.ttf",
     "static/media/MazzardH-SemiBold.ttf": "./static/media/MazzardH-SemiBold.ae8bcb425c90829d8925.ttf",
@@ -27,11 +27,11 @@
     "static/media/search.svg": "./static/media/search.82d3481840537f55a197ec3b7d2e44f5.svg",
     "static/media/home.svg": "./static/media/home.dcebe669ba2f9865fb452e6cfc30b80f.svg",
     "static/media/goup.svg": "./static/media/goup.db993b821b0aa4bca99715960538f054.svg",
-    "main.6096502b.css.map": "./static/css/main.6096502b.css.map",
-    "main.19470943.js.map": "./static/js/main.19470943.js.map"
+    "main.16927eee.css.map": "./static/css/main.16927eee.css.map",
+    "main.313632d0.js.map": "./static/js/main.313632d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.6096502b.css",
-    "static/js/main.19470943.js"
+    "static/css/main.16927eee.css",
+    "static/js/main.313632d0.js"
   ]
 }
