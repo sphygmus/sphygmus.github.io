@@ -1,1 +1,0 @@
-"use strict";exports.id=760,exports.ids=[760],exports.modules={1760:e=>{e.exports=JSON.parse('{"currentLocale":"en","message":"Message","submit":"Submit","date":"Date"}')}};
