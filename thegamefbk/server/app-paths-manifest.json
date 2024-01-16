@@ -1,0 +1,19 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/api/route": "app/api/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/[locale]/(legal)/privacy-policy/page": "app/[locale]/(legal)/privacy-policy/page.js",
+  "/[locale]/(legal)/terms-of-service/page": "app/[locale]/(legal)/terms-of-service/page.js",
+  "/[locale]/page": "app/[locale]/page.js",
+  "/[locale]/(pages)/test/page": "app/[locale]/(pages)/test/page.js",
+  "/[locale]/(pages)/menu/page": "app/[locale]/(pages)/menu/page.js",
+  "/[locale]/(pages)/contact/page": "app/[locale]/(pages)/contact/page.js",
+  "/[locale]/(pages)/corporate/event/page": "app/[locale]/(pages)/corporate/event/page.js",
+  "/[locale]/(pages)/corporate/page": "app/[locale]/(pages)/corporate/page.js",
+  "/[locale]/(pages)/discover/areas/page": "app/[locale]/(pages)/discover/areas/page.js",
+  "/[locale]/(pages)/corporate/meeting/page": "app/[locale]/(pages)/corporate/meeting/page.js",
+  "/[locale]/(pages)/discover/social-awareness/page": "app/[locale]/(pages)/discover/social-awareness/page.js",
+  "/[locale]/(pages)/discover/page": "app/[locale]/(pages)/discover/page.js",
+  "/[locale]/(pages)/reservation/page": "app/[locale]/(pages)/reservation/page.js"
+}

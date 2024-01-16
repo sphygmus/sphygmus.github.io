@@ -1,0 +1,1 @@
+"use strict";exports.id=665,exports.ids=[665],exports.modules={2665:e=>{e.exports=JSON.parse('{"currentLocale":"tr","message":"Mesaj","submit":"G\xf6nder","date":"Tarih"}')}};
